@@ -1,0 +1,32 @@
+{
+    "SKILL_NAME": "Google Sheets Example",
+    "DEFAULT_MSG": [
+        "Google Sheets is open, which cell would you like me to read or write to?"
+    ],
+    "CELL_TAKEN": [
+        "What would you like me to write?"
+    ],
+    "DATA_READ_REPROMPT": [
+        "What else would you like to do?"
+    ],
+    "DATA_ADDED": ["Data has been added to Google Sheets."],
+    "DATA_ADDED_REPROMPT": ["What else would you like to do?"],
+    "HELP": [
+      "This is a simple skill demonstrating the integration of google sheets with an Alexa Skill."
+    ],
+    "HELP_REPROMPT": [
+      "What would you like to do?"
+    ],
+    "FALLBACK": [
+      "Sorry, I didn't understand that. What would you like to do?"
+    ],
+    "FALLBACK_REPROMPT": [
+      "What would you like to do?"
+    ],
+    "CANCEL_STOP_RESPONSE": [
+      "Good bye",
+      "Okay. I'll be here if you need me."
+    ],
+    "ERROR": "Sorry, I wasn't able to handle your last request. Could you say that again?",
+    "ERROR_REPROMPT": "Could you say that again?"
+}
