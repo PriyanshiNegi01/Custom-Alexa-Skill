@@ -1,0 +1,152 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "Cell",
+              "type": "AMAZON.AlphaNumeric"
+            }
+          ],
+          "name": "ReadCellIntent",
+          "samples": [
+            "Read {Cell}",
+            "{Cell}",
+            "Fetch data from {Cell}",
+            "Read from {Cell}"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "CellCol",
+              "type": "AMAZON.AlphaNumeric"
+            },
+            {
+              "name": "CellRow",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "AddDataIntent",
+          "samples": [
+            "write to {CellCol} {CellRow}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "CellData",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "WriteToCellIntent",
+          "samples": [
+            "the data I would like to add is {CellData}",
+            "data I would like to add is {CellData}",
+            "the data is {CellData}",
+            "data is {CellData}",
+            "add {CellData}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "SearchQuery",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "SearchIntent",
+          "samples": [
+            "look for {SearchQuery}",
+            "is {SearchQuery} present in the sheet",
+            "check whether {SearchQuery} is present in the sheet or not",
+            "search for {SearchQuery}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello world"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "a. four"
+                ],
+                "value": "A4"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "a. three"
+                ],
+                "value": "A3"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "a. two"
+                ],
+                "value": "A2"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "a. one"
+                ],
+                "value": "A1"
+              }
+            }
+          ],
+          "name": "CellSlotType"
+        }
+      ],
+      "invocationName": "google sheets",
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  }
+}
